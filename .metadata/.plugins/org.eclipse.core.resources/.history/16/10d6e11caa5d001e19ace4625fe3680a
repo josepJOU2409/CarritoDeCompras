@@ -1,0 +1,100 @@
+package org.cibertec.edu.pe.model;
+
+import java.io.InputStream;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+@Entity
+@Table(name="producto")
+public class Productos {
+	@Id
+	private String IdProductos;
+	private String Nombre;
+	private InputStream foto;
+	private String Descripcion;
+	private double precio;
+	private String stock;
+	
+	
+	public Productos() {
+	}
+
+
+	public Productos(String idProductos, String nombre, InputStream foto, String descripcion, double precio,
+			String stock) {
+		IdProductos = idProductos;
+		Nombre = nombre;
+		this.foto = foto;
+		Descripcion = descripcion;
+		this.precio = precio;
+		this.stock = stock;
+	}
+	
+	//getter and setter
+
+
+	public String getIdProductos() {
+		return IdProductos;
+	}
+
+
+	public void setIdProductos(String idProductos) {
+		IdProductos = idProductos;
+	}
+
+
+	public String getNombre() {
+		return Nombre;
+	}
+
+
+	public void setNombre(String nombre) {
+		Nombre = nombre;
+	}
+
+
+	public InputStream getFoto() {
+		return foto;
+	}
+
+
+	public void setFoto(InputStream foto) {
+		this.foto = foto;
+	}
+
+
+	public String getDescripcion() {
+		return Descripcion;
+	}
+
+
+	public void setDescripcion(String descripcion) {
+		Descripcion = descripcion;
+	}
+
+
+	public double getPrecio() {
+		return precio;
+	}
+
+
+	public void setPrecio(double precio) {
+		this.precio = precio;
+	}
+
+
+	public String getStock() {
+		return stock;
+	}
+
+
+	public void setStock(String stock) {
+		this.stock = stock;
+	}
+	
+	
+	
+}

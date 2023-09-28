@@ -1,0 +1,8 @@
+##MySQL
+spring.datasource.url=jdbc:mysql://localhost:3306/CarritoCompras
+spring.datasource.username=root
+spring.datasource.password=mysql
+spring.jpa.hibernate.ddl-auto=update
+
+## Hibernate
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
